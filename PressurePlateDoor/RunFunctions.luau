@@ -1,5 +1,6 @@
-local PressurePlateDoor = require(script.Parent:WaitForChild("PressurePlateDoor"))
-local stage = script.Parent
+local stage = script.Parent.Parent
 
--- PressurePlate
+
+-- PressurePlateDoor
+local PressurePlateDoor = require(script.Parent:WaitForChild("PressurePlateDoor"))
 PressurePlateDoor:SetupPressurePlate(stage)
