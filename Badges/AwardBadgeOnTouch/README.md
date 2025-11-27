@@ -1,2 +1,28 @@
-AwardBadgeOnTouch is used for when the map creator wants the player to be given a badge after getting to a certain point in their stage.
-To use, add the module to your stages LocalFunctions folder then add the RunFunctions file with it. From there you must define your part in the stage and the badge id you want to give out. RunFunctions should come with the local stage line as to make referencing it as simple as (stage.PARTNAME, BADGEID)
+# AwardBadgeOnTouch
+
+`AwardBadgeOnTouch` is a module designed for stage creators who want to reward players with a badge when they reach a specific point in their stage.
+
+---
+
+## Features
+
+- Automatically awards a badge to the player when they reach a designated part in the stage.
+- Easy to integrate with your existing stages using the provided `RunFunctions` helper.
+
+---
+
+## Installation
+
+1. Add the `AwardBadgeOnTouch` module to your stage's `LocalFunctions` folder.
+2. Include the `RunFunctions` file that comes with the module.
+
+---
+
+## Usage
+
+1. Define the part in your stage where the badge should be awarded.
+2. Specify the badge ID you want to give to the player.
+3. Use the `RunFunctions` helper to reference the part and badge ID easily:
+
+```lua
+RunFunctions(stage.PARTNAME, BADGEID)
