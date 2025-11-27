@@ -2,21 +2,16 @@
 
 `AwardBadgeOnTouch` is a module designed for stage creators who want to reward players with a badge when they reach a specific point in their stage.
 
----
 
 ## Features
 
 - Automatically awards a badge to the player when they reach a designated part in the stage.
-- Easy to integrate with your existing stages using the provided `RunFunctions` helper.
 
----
 
 ## Installation
 
 1. Add the `AwardBadgeOnTouch` module to your stage's `LocalFunctions` folder.
 2. Include the `RunFunctions` file that comes with the module.
-
----
 
 ## Usage
 
