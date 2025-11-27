@@ -1,3 +1,5 @@
+local stage = script.Parent.Parent
+
 -- AwardBadgeOnTouch
 local AwardBadgeOnTouch = require(script.Parent:WaitForChild("AwardBadgeOnTouch"))
-AwardBadgeOnTouch:AwardBadgeOnTouch(partname, badgeid)
+AwardBadgeOnTouch:AwardBadgeOnTouch(stage.partname, badgeid)
