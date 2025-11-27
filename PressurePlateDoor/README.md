@@ -14,20 +14,27 @@
 
 ## Installation
 
-1. Place the `PressurePlateDoor` model into your stage's `StageFunctions` folder.
+1. Place the `PressurePlateDoor` module into your stage's `StageFunctions` folder.
 2. Make sure `RunFunctions` is present and accessible to execute the function.
 
 ---
 
 ## Usage
 
-1. Position the **PressurePlate** where you want players or cubes to interact.  
-2. Set the **PressureDoor** in the position you want to disappear.  
-3. Place a **MoveCube** that can trigger the plate.  
-4. Reference them in your `RunFunctions` script as needed to activate the interaction.
+1. Place the **PressurePlate** part in your stage. 
+2. Position the **PressureDoor** that should fade out permanently somewhere.  
+3. Place the **MoveCube** that will trigger the plate.  
+4. Reference them in `RunFunctions` like this:
 
 ```lua
 local stage = script.Parent.Parent
 
 local PressurePlateDoor = require(script.Parent:WaitForChild("PressurePlateDoor"))
 PressurePlateDoor:SetupPressurePlate(stage)
+
+```
+### Custom Parts
+If you do not wish to use the names given by default you can change that by modifing the function:
+```lua
+PressurePlateDoor_AlwaysOn:SetupPressurePlate(stage, "CustomPlate", "BigDoor", "HeavyCube")
+```
