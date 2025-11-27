@@ -1,1 +1,2 @@
-ts
+AwardBadgeOnTouch is used for when the map creator wants the player to be given a badge after getting to a certain point in their stage.
+To use, add the module to your stages LocalFunctions folder then add the RunFunctions file with it. From there you must define your part in the stage and the badge id you want to give out. RunFunctions should come with the local stage line as to make referencing it as simple as (stage.PARTNAME, BADGEID)
