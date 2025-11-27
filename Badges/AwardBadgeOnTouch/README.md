@@ -20,4 +20,8 @@
 3. Use the `RunFunctions` helper to reference the part and badge ID easily:
 
 ```lua
-RunFunctions(stage.PARTNAME, BADGEID)
+local stage = script.Parent.Parent
+
+-- AwardBadgeOnTouch
+local AwardBadgeOnTouch = require(script.Parent:WaitForChild("AwardBadgeOnTouch"))
+AwardBadgeOnTouch:AwardBadgeOnTouch(stage.partname, badgeid)
