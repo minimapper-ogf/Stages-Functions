@@ -27,4 +27,7 @@
 4. Reference them in your `RunFunctions` script as needed to activate the interaction.
 
 ```lua
-RunFunctions(stage.PressurePlate, stage.PressureDoor, stage.MoveCube)
+local stage = script.Parent.Parent
+
+local PressurePlateDoor = require(script.Parent:WaitForChild("PressurePlateDoor"))
+PressurePlateDoor:SetupPressurePlate(stage)
